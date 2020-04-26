@@ -1,0 +1,397 @@
+
+@import url('./fonts.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Monstserrat: 'Monstserrat', cursive;
+    --Monstserrat-500: 'Monstserrat-500', cursive;
+    --Baloo-bold: 'Baloo-bold', cursive;
+    --Baloo: 'Baloo', cursive;
+}
+
+body{
+    padding: 45px 130px;
+    height: 100%;
+}
+
+.title{
+    font-family: var(--Monstserrat);
+}
+
+p{
+    font-family:var(--Monstserrat);
+    color: #6F6F6F ;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+
+}
+/*-------nav-------*/
+
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   margin-bottom: 6rem; 
+}
+.nav-click{
+    width: 30vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.849);
+    position: absolute;
+    top: 0rem;
+    right: -50rem;
+    z-index: 1;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    position: fixed;
+}
+.active{
+    right: 0;
+}
+.nav-click img{
+    width: 25px;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    cursor: pointer;
+}
+.nav-click a{
+    color: rgb(255, 255, 255);
+    font-family: var(--Monstserrat-500);
+    font-size: 30px;
+    line-height: 7rem;
+    margin-left: 2rem;
+}
+nav p{
+    color: #000;
+    font-family: var(--Baloo-bold);
+    font-size: 28px;
+    letter-spacing: .2rem;
+}
+nav  img{
+    cursor: pointer;
+    width: 2.5rem;
+}
+.icon a img{
+    cursor: pointer;
+}
+/*-------main-------*/
+
+.icon{
+    position: fixed;
+    left: 35px;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.icon a img{
+    width: 30px;
+    margin: 10px 0;
+}
+.icon a img:hover{
+    filter:drop-shadow(0px 0px 10px rgba(175, 174, 174, 0.973))
+}
+.sec1{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10rem;
+    overflow: hidden;
+}
+.sub-sec{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    width: 40%;
+    height: 10px;
+    background-color: #707070;
+    margin-bottom: 10px;
+}
+.title h1{
+    font-size: 40px;
+}
+.title h2{
+    font-size: 22px;
+}
+.breakline{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 5px 0;
+}
+.bline{
+    height: 4px;
+    background-color: #707070;
+    margin-bottom: 6px;
+}
+.line1{
+    width: 3rem;
+}
+.line2{
+    width: 6rem;
+}
+.line3{
+    width: 9rem;
+}
+.text{
+    width: 40%;
+}
+.button1{
+    width: 8rem;
+    height: 3rem;
+    background: transparent;
+    border: 3px solid #F1BC00;
+    font-size: 18px;
+    font-family: var(--Baloo);
+    margin: .5rem 0;
+    cursor: pointer;
+    transition: all 650ms;
+}
+.button1:hover{
+    background-color: #F1BC00;
+    border: 3px solid rgb(0, 0, 0);
+}
+.bg1{
+    position: absolute;
+    top: 8rem;
+    right: 9rem;
+    width: 30rem;
+}
+.bg2{
+    position: absolute;
+    top: 8.5rem;
+    right: 14rem;
+    height: 25rem;
+    width: 20rem;
+}
+
+.sec2{
+    background-color: rgba(239, 239, 239, 0.63);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+}
+.list{
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+.item img{
+    width: 4rem;
+    margin-bottom: 1rem;
+}
+.item{
+    text-align: center;
+}
+
+.sec3{
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin: 2rem 0;
+}
+input{
+    margin: .5rem 0;
+    padding: 3px 10px;
+    height:2.2rem;
+    width: 20rem;
+    border: .7px solid #707070;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: var(--Monstserrat);
+}
+.button2{
+    width: 4.5rem;
+    height: 2.2rem;
+    font-size: 12px;
+    font-family: var(--Monstserrat-500);
+    border-radius: 10px;
+    border: 1.5px solid black;
+    background-color:#F2BD00;
+    margin: .5rem .5rem 0 0;
+    cursor: pointer;
+    transition: all 650ms;
+}
+.button2:hover{
+    box-shadow: 0px 0px 25px 2px rgba(235,192,21,1);
+}
+
+.sec4{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(239, 239, 239, 0.63);
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right{
+    margin: 5% 0 5% 10%;
+    flex-basis: 35%;
+}
+.left{
+    align-self: center;
+    flex-basis: 65%;
+}
+.left img{
+    margin-left: 10%;
+    width:80%;
+}
+.text-sec4{
+    width:90%;
+}
+
+
+footer{
+    margin-top: 4rem;
+}
+.item-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 25%;
+}
+.item-footer img{
+    width: 18%;
+    height: 50%;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+.vietnam{
+    display: flex;
+    align-items: center;
+    width: 6.3rem;
+}
+.vietnam img{
+    width: 25%;
+    margin-right: .5rem;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+    p{
+        font-size: 12px;
+    }
+    .line{
+        width: 40%;
+        height:5px;
+        margin-bottom: 5px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .title h2{
+        font-size: 18px;
+    }
+    .breakline{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 5px 0;
+    }
+    .bline{
+        height: 2px;
+        background-color: #707070;
+        margin-bottom: 4px;
+    }
+    .line1{
+        width: 1.5rem;
+    }
+    .line2{
+        width: 3rem;
+    }
+    .line3{
+        width: 6rem;
+    }
+    .button1{
+        width: 6rem;
+        height: 2rem;
+    }
+    .bg1{
+        top: 10rem;
+        right: 5rem;
+        width: 20rem;
+    }
+    .bg2{
+        top: 7rem;
+        right: 8rem;
+        height: 25rem;
+        width: 13rem;
+    }
+}
+@media only screen and (max-width: 780px){
+    .sec4{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 650px){
+    .bg1, .bg2{
+        display: none;
+    }
+    .line{
+        width: 80%;
+    }
+    .text{
+        width: 70%;
+    } 
+    footer .list{
+        flex-direction: column;
+    }
+    .item-footer img{
+        width: 8%;
+        margin: 1rem;
+    }
+    .vietnam{
+        width: 5rem;
+    }  
+    .nav-click{
+        width: 100vw;
+    }
+    nav p{
+        font-size: 18px;
+    }
+    nav img{
+        width: 2rem;
+    }
+}
+@media only screen and (max-width: 420px){
+    body{
+        padding: 15px 50px;
+    }
+    .icon{
+        left: 3.7%;
+    }
+    .icon img{
+        width: 20px;
+    }
+    .sec2 .list{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .item img{
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+    .item{
+        margin-bottom: 1rem;
+    } 
+}
